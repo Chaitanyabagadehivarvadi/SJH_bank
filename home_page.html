@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<title>my webpage</title>
+		
+			
+<style>    
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+.logo{
+    height:90px;
+    width:95px;
+    background: url("logo.jpeg")no-repeat;
+    background-size: cover;
+    margin-left:90%;
+    border-radius:50%;
+}
+.infotexthead{
+   font-size:70px;
+}  
+   
+.header {
+    
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color:greenyellow;
+    position: fixed;
+    height: 90px!important;
+    overflow: hidden;
+    z-index: 8;
+    border: 3px solid black;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 100px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    font-size:35px;
+    width: 600px;
+    margin-top: 100px;
+    transform: translateX(-600px);
+    transition: transform 500ms ease-in-out;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+}
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+}
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebarMenuInner li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+  }
+  .spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 10px;
+  width: 50px;
+  background-color: #fff;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 26px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -20px;
+}
+.mainbody{
+	width:100%;
+	height:2000px;
+background:url(background.jpg)no-repeat;
+padding-top:80px;
+background-size:cover;
+color:;
+font-size:50px;
+}
+
+.inform{
+width:80%;
+height:500px;
+align:center;
+margin-left:9%;
+margin-top:400px;
+text-align:center;
+font-style:italic;
+border:10px solid rgb(100 250  100);
+padding:15px;
+background-image:linear-gradient(to bottom ,red,yellow);
+box-shadow: 10px 10px 10px  10px black;
+}
+</style>
+
+</head>
+<body>
+	<div class="header"><div class="logo"></div></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  
+</label>
+ 
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <a href="home_page.html"><li><i>HOME</i></li></a>
+      <a href=""><li>ABOUT US</li></a>
+      <a href="depo.html"><li>TOTAL DEPOSITE BY MEMBERS</li></a>
+      <a href=""><li>  TOTAL INTREST PAID BY MEMBERS </li></a>
+      <a href=""><li> TOTAL PANALITY PAID BY MEMBERS</li></a>
+      <a href=""><li>TOTAL PRESENTY OF MEMBER</li></a>
+      <a href=""><li>LOAN HOLDER </li></a>
+      <a href=""><li>GOODWILL OF COMPANY PER MEMBER </li></a>
+      
+      <li>chaitanya bagade<span>Web Developer</span></li>
+      <a href="#"><li>contact me 9307084680</li></a>
+      
+    </div>
+    
+<div class="mainbody">
+	
+<div class="inform">
+<i><strong class="infotexthead">Smart Jay Hanuman Co-Operative Society</strong></i>
+	
+ <br><br><b>Aim:-</b> GROWTH WITH ALL TEAM
+</div>
+	
+	
+    
+    
+</div>  
+</body>
+</html>
