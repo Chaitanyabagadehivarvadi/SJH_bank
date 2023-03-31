@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta charset="UTF-8">
+		<title>my webpage</title>
+		
+			
+<style>    
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+.logo{
+    height:90px;
+    width:95px;
+    background: url("logo.jpeg")no-repeat;
+    background-size: cover;
+    margin-left:90%;
+    border-radius:50%;
+}
+.infotexthead{
+   font-size:70px;
+}  
+   
+.header {
+    
+    display: block;
+    margin: 0 auto;
+    width: 100% ;
+    max-width: 100%;
+    box-shadow: none;
+    background-color:greenyellow;
+    position: fixed;
+    height: 90px!important;
+    overflow: hidden;
+    z-index: 8;
+    border: 3px solid black;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 100px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    font-size:35px;
+    width: 300px;
+    margin-top: 90px;
+    transform: translateX(-300px);
+    transition: transform 500ms ease-in-out;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+}
+.sidebarMenuInner {
+  margin: 0;
+ 
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+  padding-left:40px;
+}
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebarMenuInner li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+  }
+  .spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 10px;
+  width: 50px;
+  background-color: #fff;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 26px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -20px;
+}
+.mainbody{
+	width:100%;
+	height:100%;
+background:url(homebackground.jpg)no-repeat;
+padding-top:80px;
+background-size:cover;
+color:;
+font-size:50px;
+}
+
+.loginbox{
+  width:70%;
+  height:55%;
+  margin-top:23%;
+  margin-left:14%;
+  border:2px solid black;
+  border-radius :5%;
+ 
+  background:linear-gradient(rgba(231, 90, 90, 0.5),rgba(125, 255, 125, 0.5));
+}
+h2{
+  text-align:center;
+  font-family:bold;
+}
+label{
+  margin-left:10px;
+  font-size:50px;
+  font-family:bold;
+}
+#in1{
+  width:55%;
+  height:80px;
+  font-size:50px;
+  margin-left:10px;
+  border-radius: 5%;
+}
+#in2{
+  width:54%;
+  height:80px;
+  font-size:50px;
+  margin-left:10px;
+  border-radius: 5%;
+}
+#in3{
+  width:54%;
+  height:80px;
+  font-size:50px;
+  margin-left:25px;
+  border-radius: 5%;
+}
+.submit{
+   width:25%;
+   height:80px;
+   font-size:50px;
+   border:2px solid blue;
+   border-radius:20%;
+   margin-left:39%;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+	<div class="header"><div class="logo"></div></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  
+</label>
+ 
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <a href="home.html"><li><i>HOME</i></li></a>
+      <a href="sign_up.html"><li>sign up</li></a>
+      <a href="login.html"><li> login </li></a>
+      <a href="contact.html"><li> contact us </li></a>
+      <a href="aboutus.html"><li> about us</li></a>
+      <a href="project.html"><li> project</li></a>
+     
+     
+      
+      <li>chaitanya bagade<span>Web Developer</span></li>
+      <a href="#"><li>contact me 9307084680</li></a>
+      
+    </div>
+    
+<div class="mainbody">
+	
+  <div class="loginbox">
+    <form action="login.html" class="form">
+         <h2>Sign Up</h2>
+         <label><b>User Name:-</b></label><input id="in1"type="text"name="username">
+          <br><br>
+         <label><b>Mobiel No.:-</b></label><input id="in2"type="number"name="username">
+          <br><br>
+          <label><b>Password :-</b></label><input id="in3"type="password"name="username">
+          <br><br>
+          <label><b>Re-Enter</b><br><b style="margin-left:10px">Password :-</b></label><input id="in3"type="password"name="username">
+          <br><br>
+          <button type="submit" class="submit">submit</button>
+    </form>
+ </div>
+	
+	
+    
+    
+</div>  
+</body>
+</html>
